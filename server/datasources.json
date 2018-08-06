@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysqldb": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "ali_app",
+    "password": "",
+    "name": "mysqldb",
+    "connector": "mysql",
+    "user": "root"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "../node_modules/loopback-auditz",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Users": {
+    "dataSource": "erp_manager"
+  },
+  "AccessToken": {
+    "dataSource": "erp_manager",
+    "public": false,
+    "relations": {
+      "user": {
+        "type": "belongsTo",
+        "model": "Users",
+        "foreignKey": "userId"
+      }
+    }
+  },
+  "ACL": {
+    "dataSource": "erp_manager",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "erp_manager",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "erp_manager",
+    "public": false
+  },
+  "Groups": {
+    "dataSource": "erp_manager",
+    "public": true
+  },
+  "GroupAccess": {
+    "dataSource": "erp_manager",
+    "public": true
+  },
+  "Employee": {
+    "dataSource": "erp_manager",
+    "public": true
+  },
+  "Department": {
+    "dataSource": "erp_manager",
+    "public": true
+  },
+  "DesignationCategory": {
+    "dataSource": "erp_manager",
+    "public": true
+  },
+  "Designation": {
+    "dataSource": "erp_manager",
+    "public": true
+  },
+  "Office": {
+    "dataSource": "erp_manager",
+    "public": true
+  },
+  "Locations": {
+    "dataSource": "erp_manager",
+    "public": true
+  },
+  "AddressTypes": {
+    "dataSource": "erp_manager",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "erp_manager",
+    "public": true
+  }
+}
