@@ -13,6 +13,7 @@
     "seed": "node_modules/.bin/lb-migration seed"
   },
   "dependencies": {
+    "component-storage": "^2.0.1",
     "compression": "^1.0.3",
     "cors": "^2.8.4",
     "helmet": "^3.10.0",

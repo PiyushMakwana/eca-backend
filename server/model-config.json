@@ -3,6 +3,7 @@
     "sources": [
       "loopback/common/models",
       "loopback/server/models",
+      "component-storage/common/models",
       "../common/models",
       "./models"
     ],
@@ -55,6 +56,18 @@
     "public": true
   },
   "Points": {
+    "dataSource": "mysqldb",
+    "public": true
+  },
+  "Account": {
+    "dataSource": "mysqldb",
+    "public": true
+  },
+  "container": {
+    "dataSource": "storage",
+    "public": true
+  },
+  "files": {
     "dataSource": "mysqldb",
     "public": true
   }

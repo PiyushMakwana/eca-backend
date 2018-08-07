@@ -7,9 +7,17 @@
     "host": "localhost",
     "port": 3306,
     "database": "ali_app",
-    "password": "",
+    "password": "rootPassword",
     "name": "mysqldb",
     "connector": "mysql",
     "user": "root"
+  },
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./storage",
+    "maxFileSize": "52428800",
+    "nameConflict": "makeUnique"
   }
 }

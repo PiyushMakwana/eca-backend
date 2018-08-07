@@ -1,35 +1,30 @@
 {
-  "name": "AppDetail",
-  "plural": "app-detail",
+  "name": "Account",
+  "plural": "account",
   "base": "PersistedModel",
-  "strict": true,
   "idInjection": true,
-  "indexes": {},
   "options": {
     "validateUpsert": true
   },
-  "replaceOnPUT": true,
   "properties": {
-    "appName": {
-      "type": "String",
-      "required": true
+    "modifiedAt": {
+      "type": "date"
     },
-    "locale": {
-      "type": "String",
+    "modifiedBy": {
+      "type": "string"
+    },
+    "totalPoints": {
+      "type": "number",
       "required": true,
-      "default": "en"
+      "default": 0
     }
   },
   "validations": [],
   "relations": {
-    "app": {
+    "user": {
       "type": "belongsTo",
-      "model": "App",
-      "foreignKey": "appId",
-      "options": {
-        "validate": true,
-        "forceId": false
-      }
+      "model": "Users",
+      "foreignKey": "userId"
     }
   },
   "acls": [
