@@ -39,6 +39,9 @@
     },
     "verificationToken": {
       "type": "string"
+    },
+    "avatar": {
+      "type": "string"
     }
   },
   "validations": [],
